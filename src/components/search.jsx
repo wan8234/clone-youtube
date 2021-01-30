@@ -17,7 +17,9 @@ const Search = memo((props) => {
                 className="search-input"
                 placeholder="Search.."
             />
-            <button className="navbar-button fas fa-search"></button>
+            <button>
+                <i className="navbar-button fas fa-search"> </i>
+            </button>
         </form>
     );
 });
