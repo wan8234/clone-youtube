@@ -5,8 +5,8 @@ const Search = memo((props) => {
     const inputRef = React.createRef();
     const onSubmit = (event) => {
         event.preventDefault();
-        const name = inputRef.current.value;
-        name && props.onAdd(name);
+        const item = inputRef.current.value;
+        item && props.onSearch(item);
         formRef.current.reset();
     };
     return (
